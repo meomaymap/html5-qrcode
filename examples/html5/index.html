@@ -22,6 +22,7 @@
         var resultContainer = document.getElementById('qr-reader-results');
         var lastResult, countResults = 0;
         function onScanSuccess(decodedText, decodedResult) {
+            alert(1);
             if (decodedText !== lastResult) {
                 ++countResults;
                 lastResult = decodedText;
